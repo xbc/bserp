@@ -1,261 +1,248 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>百财网</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Bootstrap -->
-        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-        <link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css">
-
-        <!-- Bootstrap Admin Theme -->
-        <link rel="stylesheet" media="screen" href="css/bootstrap-admin-theme.css">
-        <link rel="stylesheet" media="screen" href="css/bootstrap-admin-theme-change-size.css">
-
-        <!-- Vendors -->
-        <!-- (...) -->
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+<head>
+<title>百财网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css">
+<!-- Bootstrap Admin Theme -->
+<link rel="stylesheet" media="screen" href="css/bootstrap-admin-theme.css">
+<link rel="stylesheet" media="screen" href="css/bootstrap-admin-theme-change-size.css">
+<!-- Vendors -->
+<!-- (...) -->
+<link rel="stylesheet" media="screen" href="css/custom.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
            <script type="text/javascript" src="js/html5shiv.js"></script>
            <script type="text/javascript" src="js/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body class="bootstrap-admin-with-small-navbar">
-        <!-- small navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top bootstrap-admin-navbar-sm" role="navigation">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left bootstrap-admin-theme-change-size">
-                        <li class="text">字体大小:</li>
-                        <li><a class="size-changer small">小</a></li>
-                        <li><a class="size-changer large active">大</a></li>
+</head>
+<body class="bootstrap-admin-with-small-navbar">
+<!-- small navbar -->
+<nav class="navbar navbar-default navbar-fixed-top bootstrap-admin-navbar-sm" role="navigation">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left bootstrap-admin-theme-change-size">
+                <li class="text">字体大小:</li>
+                <li><a class="size-changer small active">小</a></li>
+                <li><a class="size-changer large">大</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li> <a href="#">Reminders <i class="glyphicon glyphicon-bell"></i></a> </li>
+                <li> <a href="#">Settings <i class="glyphicon glyphicon-cog"></i></a> </li>
+                <li> <a href="#">Go to frontend <i class="glyphicon glyphicon-share-alt"></i></a> </li>
+                <li class="dropdown"> <a href="#" role="button" class="dropdown-toggle" data-hover="dropdown"> <i class="glyphicon glyphicon-user"></i> Username <i class="caret"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="index.html">Logout</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li>
-                            <a href="#">Reminders <i class="glyphicon glyphicon-bell"></i></a>
-                        </li>
-                        <li>
-                            <a href="#">Settings <i class="glyphicon glyphicon-cog"></i></a>
-                        </li>
-                        <li>
-                            <a href="#">Go to frontend <i class="glyphicon glyphicon-share-alt"></i></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" role="button" class="dropdown-toggle" data-hover="dropdown"> <i class="glyphicon glyphicon-user"></i> Username <i class="caret"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li><a href="index.html">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- main / large navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top bootstrap-admin-navbar bootstrap-admin-navbar-under-small" role="navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="about.html">首页</a>
-                    </div>
-                    <div class="collapse navbar-collapse main-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">研究</a></li>
-                            <li><a href="#">专家</a></li>
-                            <li><a href="#">项目</a></li>
-
-														 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown">应收 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-
-
-														 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown">应付 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-
-														 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown">固定资产 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown">总账 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation" class="dropdown-header">凭证</li>
-                                    <li><a href="#">录入凭证</a></li>
-                                    <li><a href="#">过账</a></li>
-                                    <li><a href="#">多币种</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">设置</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-
-							 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown">应付账款 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="presentation" class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-
-
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- main / large navbar -->
+<nav class="navbar navbar-default navbar-fixed-top bootstrap-admin-navbar bootstrap-admin-navbar-under-small" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="about.html">首页</a> </div>
+            <div class="collapse navbar-collapse main-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                    <li><a href="#">专家</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown">应收 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div>
-            </div><!-- /.container -->
-        </nav>
-
-        <div class="container">
-            <!-- left, vertical navbar & content -->
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown">应付 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown">固定资产 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown">总账 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">凭证</li>
+                            <li><a href="#">录入凭证</a></li>
+                            <li><a href="#">过账</a></li>
+                            <li><a href="#">多币种</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">设置</li>
+                            <li class="dropdown-submenu"> <a href="#">安全性</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">安全性规则1</a> </li>
+                                    <li class="dropdown-submenu"><a href="#">安全性规则2</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">安全性规2222则2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown">应付<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">业务处理</li>
+                            <li class="dropdown-submenu"><a href="#">发票</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a href="#">录入</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">发票批</a></li>
+                                            <li><a href="#">发票</a></li>
+                                            <li><a href="#">快速开票</a></li>
+                                            <li><a href="#">费用报表</a></li>
+                                            <li><a href="#">经常性发票</a></li>
+                                            <li><a href="#">开放接口发票</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">录入</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">发票批</a></li>
+                                            <li><a href="#">发票</a></li>
+                                            <li><a href="#">快速开票</a></li>
+                                            <li><a href="#">发票概览</a></li>
+                                            <li><a href="#">预扣额</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">应计注销</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown-submenu"><a href="#">付款</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a href="#">录入</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">付款批</a></li>
+                                            <li><a href="#">付款</a></li>
+                                            <li><a href="#">付款批集</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">查询</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">付款批</a></li>
+                                            <li><a href="#">付款</a></li>
+                                            <li><a href="#">付款概览</a></li>
+                                            <li><a href="#">预扣额</a></li>
+                                            <li><a href="#">传输</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">会计</a></li>
+                            <li><a href="#">信用卡</a></li>
+                            <li><a href="#">工作流</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">设置</li>
+                            <li><a href="#">供应商</a></li>
+                            <li><a href="#">员工</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<div class="container">
+    <!-- left, vertical navbar & content -->
+    <div class="row">
+        <!-- left, vertical navbar -->
+        <div class="col-md-2 bootstrap-admin-col-left">
+            <ul class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+                <li> <a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i> About</a> </li>
+                <li class="active"> <a href="dashboard.html"><i class="glyphicon glyphicon-chevron-right"></i> Dashboard</a> </li>
+                <li class="disabled"> <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Calendar</a>
+                    <!-- calendar.html -->
+                </li>
+                <li class="disabled"> <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Statistics (Charts)</a>
+                    <!-- stats.html -->
+                </li>
+                <li> <a href="forms.html"><i class="glyphicon glyphicon-chevron-right"></i> Forms</a> </li>
+                <li> <a href="tables.html"><i class="glyphicon glyphicon-chevron-right"></i> Tables</a> </li>
+                <li> <a href="buttons-and-icons.html"><i class="glyphicon glyphicon-chevron-right"></i> Buttons &amp; Icons</a> </li>
+                <li> <a href="wysiwyg-editors.html"><i class="glyphicon glyphicon-chevron-right"></i> WYSIWYG Editors</a> </li>
+                <li> <a href="ui-and-interface.html"><i class="glyphicon glyphicon-chevron-right"></i> UI &amp; Interface</a> </li>
+                <li> <a href="error-pages.html"><i class="glyphicon glyphicon-chevron-right"></i> Error pages</a> </li>
+                <li> <a href="#"><span class="badge pull-right">731</span> Orders</a> </li>
+                <li> <a href="#"><span class="badge pull-right">812</span> Invoices</a> </li>
+                <li> <a href="#"><span class="badge pull-right">27</span> Clients</a> </li>
+                <li> <a href="#"><span class="badge pull-right">1,234</span> Users</a> </li>
+                <li> <a href="#"><span class="badge pull-right">2,221</span> Messages</a> </li>
+                <li> <a href="#"><span class="badge pull-right">11</span> Reports</a> </li>
+                <li> <a href="#"><span class="badge pull-right">83</span> Errors</a> </li>
+                <li> <a href="#"><span class="badge pull-right">4,231</span> Logs</a> </li>
+            </ul>
+        </div>
+        <!-- content -->
+        <div class="col-md-10">
             <div class="row">
-                <!-- left, vertical navbar -->
-                <div class="col-md-2 bootstrap-admin-col-left">
-                    <ul class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
-                        <li>
-                            <a href="about.html"><i class="glyphicon glyphicon-chevron-right"></i> About</a>
-                        </li>
-                        <li class="active">
-                            <a href="dashboard.html"><i class="glyphicon glyphicon-chevron-right"></i> Dashboard</a>
-                        </li>
-                        <li class="disabled">
-                            <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Calendar</a><!-- calendar.html -->
-                        </li>
-                        <li class="disabled">
-                            <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Statistics (Charts)</a><!-- stats.html -->
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="glyphicon glyphicon-chevron-right"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="glyphicon glyphicon-chevron-right"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="buttons-and-icons.html"><i class="glyphicon glyphicon-chevron-right"></i> Buttons &amp; Icons</a>
-                        </li>
-                        <li>
-                            <a href="wysiwyg-editors.html"><i class="glyphicon glyphicon-chevron-right"></i> WYSIWYG Editors</a>
-                        </li>
-                        <li>
-                            <a href="ui-and-interface.html"><i class="glyphicon glyphicon-chevron-right"></i> UI &amp; Interface</a>
-                        </li>
-                        <li>
-                            <a href="error-pages.html"><i class="glyphicon glyphicon-chevron-right"></i> Error pages</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">731</span> Orders</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">812</span> Invoices</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">27</span> Clients</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">1,234</span> Users</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">2,221</span> Messages</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">11</span> Reports</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">83</span> Errors</a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="badge pull-right">4,231</span> Logs</a>
-                        </li>
-                    </ul>
+                <div class="page-header">
+                    <h1>Page title</h1>
                 </div>
-
-                <!-- content -->
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="page-header">
-                            <h1>Page title</h1>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="text-muted bootstrap-admin-box-title">Title of the box</div>
                     </div>
-
-                    <div class="row">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class="text-muted bootstrap-admin-box-title">Title of the box</div>
-                            </div>
-                            <div class="bootstrap-admin-panel-content text-muted" style="padding: 60px 0; text-align: center">
-                                Place your content here
-                            </div>
-                        </div>
-                    </div>
+                    <div class="bootstrap-admin-panel-content text-muted" style="padding: 60px 0; text-align: center"> Place your content here </div>
                 </div>
             </div>
         </div>
-
-        <!-- footer -->
-        <div class="navbar navbar-footer">
-            <div class="container">
-                <div class="row">
-                    <footer role="contentinfo">
-                        <p class="left">Bootstrap 3.x Admin Theme</p>
-                        <p class="right">&copy; 2013 <a href="http://www.meritoo.pl" target="_blank">Meritoo.pl</a></p>
-                    </footer>
-                </div>
-            </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="navbar navbar-footer">
+    <div class="container">
+        <div class="row">
+            <footer role="contentinfo">
+                <p class="left">Bootstrap 3.x Admin Theme</p>
+                <p class="right">&copy; 2013 <a href="http://www.meritoo.pl" target="_blank">Meritoo.pl</a></p>
+            </footer>
         </div>
-
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-admin-theme-change-size.js"></script>
-    </body>
+    </div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-admin-theme-change-size.js"></script>
+</body>
 </html>
